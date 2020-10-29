@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kkroszka-vids/static/css/main.3c30d1b5.chunk.css",
+    "main.js": "/kkroszka-vids/static/js/main.95645712.chunk.js",
+    "main.js.map": "/kkroszka-vids/static/js/main.95645712.chunk.js.map",
+    "runtime-main.js": "/kkroszka-vids/static/js/runtime-main.7725a2cb.js",
+    "runtime-main.js.map": "/kkroszka-vids/static/js/runtime-main.7725a2cb.js.map",
+    "static/js/2.08c60a7c.chunk.js": "/kkroszka-vids/static/js/2.08c60a7c.chunk.js",
+    "static/js/2.08c60a7c.chunk.js.map": "/kkroszka-vids/static/js/2.08c60a7c.chunk.js.map",
+    "index.html": "/kkroszka-vids/index.html",
+    "static/css/main.3c30d1b5.chunk.css.map": "/kkroszka-vids/static/css/main.3c30d1b5.chunk.css.map",
+    "static/js/2.08c60a7c.chunk.js.LICENSE.txt": "/kkroszka-vids/static/js/2.08c60a7c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7725a2cb.js",
+    "static/js/2.08c60a7c.chunk.js",
+    "static/css/main.3c30d1b5.chunk.css",
+    "static/js/main.95645712.chunk.js"
+  ]
+}
