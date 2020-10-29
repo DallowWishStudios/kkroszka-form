@@ -1,0 +1,16 @@
+.submitBtn {
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.videoInput {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.videoOr {
+    margin: 0 20px;
+}

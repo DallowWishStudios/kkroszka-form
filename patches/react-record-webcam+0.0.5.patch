@@ -1,0 +1,53 @@
+diff --git a/node_modules/react-record-webcam/dist/index.js b/node_modules/react-record-webcam/dist/index.js
+index 546e50d..49a2582 100644
+--- a/node_modules/react-record-webcam/dist/index.js
++++ b/node_modules/react-record-webcam/dist/index.js
+@@ -84,6 +84,7 @@ var initialState = Object.freeze({
+     isPreview: false,
+     isWebcamOn: false,
+     isRecording: false,
++    // videoBlob: null,
+     status: types_1.CAMERA_STATUS.CLOSED
+ });
+ var RecordRtc = /** @class */ (function (_super) {
+@@ -215,6 +216,9 @@ var RecordRtc = /** @class */ (function (_super) {
+                         return [4 /*yield*/, this.recorder.getBlob()];
+                     case 2:
+                         blob = _b.sent();
++                        var mp4Blob = blob.slice(0, blob.size, "video/mp4")
++                        window.videoBlob = mp4Blob
++
+                         preview = window.URL.createObjectURL(blob);
+                         if (this.previewRef.current) {
+                             this.previewRef.current.src = preview;
+@@ -264,7 +268,11 @@ var RecordRtc = /** @class */ (function (_super) {
+                         filename = this.props.downloadFileName
+                             ? this.props.downloadFileName + ".mp4"
+                             : new Date().getTime() + ".mp4";
+-                        utils_1.saveFile(filename, blob);
++                        var mp4Blob = blob.slice(0, blob.size, "video/mp4")
++                            // console.log({mp4Blob});
++                        utils_1.saveFile(filename, mp4Blob);
++                        // this.setState(__assign({ videoBlob: mp4Blob }));
++                        window.videoBlob = mp4Blob
+                         return [3 /*break*/, 3];
+                     case 2:
+                         error_5 = _a.sent();
+@@ -298,11 +306,16 @@ var RecordRtc = /** @class */ (function (_super) {
+                         retake: this.handleRetakeRecording,
+                         download: this.download,
+                         status: this.state.status
++                        // videoBlob: this.state.blob
+                     }),
+                 !this.props.render && (react_1["default"].createElement("div", { className: this.props.cssNamespace + "__status" }, "Status: " + this.state.status)),
+                 !this.props.render && (react_1["default"].createElement(Controls_1["default"], { cssNamespace: this.props.cssNamespace, openCamera: this.handleOpenCamera, closeCamera: this.handleCloseCamera, start: this.handleStartRecording, stop: this.handleStopRecording, retake: this.handleRetakeRecording, download: this.download, labels: this.props.controlLabels, showOpenCamera: !this.state.isWebcamOn &&
+                         !this.state.isRecording &&
+-                        !this.state.isPreview, showCloseCamera: this.state.isWebcamOn, showStart: this.state.isWebcamOn &&
++                        !this.state.isPreview,
++
++                        showCloseCamera: this.state.isWebcamOn,
++
++                        showStart: this.state.isWebcamOn &&
+                         !this.state.isRecording &&
+                         !this.state.isPreview, showStop: this.state.isRecording, showRetake: this.state.isPreview, showDownload: this.state.isPreview })))));
+     };

@@ -1,0 +1,9 @@
+.inputContainer {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+}

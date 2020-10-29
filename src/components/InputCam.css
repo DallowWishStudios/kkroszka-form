@@ -1,0 +1,8 @@
+.captureBtn {
+    display: block;
+}
+
+video.react-record-webcam__video {
+    border: 1px solid black;
+    width: 100%;
+}
