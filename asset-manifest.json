@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/kkroszka-form/static/css/main.3c30d1b5.chunk.css",
-    "main.js": "/kkroszka-form/static/js/main.e9f79a82.chunk.js",
-    "main.js.map": "/kkroszka-form/static/js/main.e9f79a82.chunk.js.map",
+    "main.css": "/kkroszka-form/static/css/main.d1d3db87.chunk.css",
+    "main.js": "/kkroszka-form/static/js/main.2f0809a5.chunk.js",
+    "main.js.map": "/kkroszka-form/static/js/main.2f0809a5.chunk.js.map",
     "runtime-main.js": "/kkroszka-form/static/js/runtime-main.e71ad11f.js",
     "runtime-main.js.map": "/kkroszka-form/static/js/runtime-main.e71ad11f.js.map",
-    "static/js/2.08c60a7c.chunk.js": "/kkroszka-form/static/js/2.08c60a7c.chunk.js",
-    "static/js/2.08c60a7c.chunk.js.map": "/kkroszka-form/static/js/2.08c60a7c.chunk.js.map",
+    "static/js/2.51a9609b.chunk.js": "/kkroszka-form/static/js/2.51a9609b.chunk.js",
+    "static/js/2.51a9609b.chunk.js.map": "/kkroszka-form/static/js/2.51a9609b.chunk.js.map",
     "index.html": "/kkroszka-form/index.html",
-    "static/css/main.3c30d1b5.chunk.css.map": "/kkroszka-form/static/css/main.3c30d1b5.chunk.css.map",
-    "static/js/2.08c60a7c.chunk.js.LICENSE.txt": "/kkroszka-form/static/js/2.08c60a7c.chunk.js.LICENSE.txt"
+    "static/css/main.d1d3db87.chunk.css.map": "/kkroszka-form/static/css/main.d1d3db87.chunk.css.map",
+    "static/js/2.51a9609b.chunk.js.LICENSE.txt": "/kkroszka-form/static/js/2.51a9609b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e71ad11f.js",
-    "static/js/2.08c60a7c.chunk.js",
-    "static/css/main.3c30d1b5.chunk.css",
-    "static/js/main.e9f79a82.chunk.js"
+    "static/js/2.51a9609b.chunk.js",
+    "static/css/main.d1d3db87.chunk.css",
+    "static/js/main.2f0809a5.chunk.js"
   ]
 }
