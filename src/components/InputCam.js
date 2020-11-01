@@ -8,18 +8,18 @@ const statusMessages = {
   ERROR: "Error occured while opening camera"
 }
 
-export const InputCam = ({ name, label, onCameraRecord }) => {
+export const InputCam = ({ label, onCameraRecord, reset=false }) => {
 
     const handleStatus = (status) => {
         if(status === statusMessages.PREVIEW){
-			const videoBlob = window.videoBlob
-			console.log('window.videoBlob', videoBlob);
-			onCameraRecord(videoBlob)
+          const videoBlob = window.videoBlob
+          console.log('window.videoBlob', videoBlob);
+          onCameraRecord(videoBlob)
         }
     };
 
     return (
-        <div className='inputContainer InputCam'>
+        <div className='InputCam'>
             <label className='bold'> {label} </label>
  
             <Webcam
@@ -39,23 +39,23 @@ export const InputCam = ({ name, label, onCameraRecord }) => {
                 }}
 
                 render={(props) => {
-
                     return (
                       <div className="webcam__render-wrapper">
-                        <h1 className="webcam__render-status">{props.status}</h1>
+                        <h2 className="webcam__render-status">{props.status}</h2>
                         <div className="webcam__render-action-wrapper">
                           <button
                             className="webcam__render-action-button"
                             disabled={props.isWebcamOn || props.isPreview}
-							onClick={props.openCamera}
-							type='button'
-                          >
+                            onClick={props.openCamera}
+                            type='button'
+                            >
                             Open camera
                           </button>
                           <button
                             className="webcam__render-action-button"
                             disabled={!props.isWebcamOn}
                             onClick={props.closeCamera}
+                            type='button'
                           >
                             Close camera
                           </button>
@@ -63,8 +63,8 @@ export const InputCam = ({ name, label, onCameraRecord }) => {
                             className="webcam__render-action-button"
                             disabled={!props.isPreview}
                             onClick={props.retake}
-							type='button'
-						>
+                            type='button'
+                          >
                             Retake
                           </button>
                           <button
@@ -73,26 +73,23 @@ export const InputCam = ({ name, label, onCameraRecord }) => {
                               !props.isWebcamOn || props.isRecording || props.isPreview
                             }
                             onClick={props.start}
-							type='button'
-						>
+                            type='button'
+                          >
                             Start recording
                           </button>
                           <button
                             className="webcam__render-action-button"
                             disabled={!props.isRecording}
-							onClick={props.stop}
-							type='button'
+                            onClick={props.stop}
+                            type='button'
                           >
                             Stop recording
                           </button>
                           <button
                             className="webcam__render-action-button"
                             disabled={!props.isPreview}
-                            onClick={(()=>{ 
-                              return props.download
-							})()}
-							type='button'
-							
+                            onClick={props.download}
+                            type='button'
                           >
                             Download
                           </button>

@@ -1,16 +1,28 @@
 .submitBtn {
-    margin: 40px 0;
+    margin: 40px 0 20px;
     padding: 10px;
 }
 
-.videoInput {
+.submitMsg {
+    color: rgb(67, 173, 6);
+}
+
+.submitMsg .error {
+    color: rgb(199, 18, 18);
+}
+
+.videoInput .content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 10px 0;
 }
 
 .videoOr {
     margin: 0 20px;
+}
+
+.videoInput .shouldBeFilled {
+    border: 1px solid red;
 }
