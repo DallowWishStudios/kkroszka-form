@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/kkroszka-form/static/css/main.18b979e0.chunk.css",
-    "main.js": "/kkroszka-form/static/js/main.d825744c.chunk.js",
-    "main.js.map": "/kkroszka-form/static/js/main.d825744c.chunk.js.map",
+    "main.css": "/kkroszka-form/static/css/main.2fa33333.chunk.css",
+    "main.js": "/kkroszka-form/static/js/main.f84b1710.chunk.js",
+    "main.js.map": "/kkroszka-form/static/js/main.f84b1710.chunk.js.map",
     "runtime-main.js": "/kkroszka-form/static/js/runtime-main.e71ad11f.js",
     "runtime-main.js.map": "/kkroszka-form/static/js/runtime-main.e71ad11f.js.map",
     "static/js/2.07cbbb3e.chunk.js": "/kkroszka-form/static/js/2.07cbbb3e.chunk.js",
     "static/js/2.07cbbb3e.chunk.js.map": "/kkroszka-form/static/js/2.07cbbb3e.chunk.js.map",
     "index.html": "/kkroszka-form/index.html",
-    "static/css/main.18b979e0.chunk.css.map": "/kkroszka-form/static/css/main.18b979e0.chunk.css.map",
+    "static/css/main.2fa33333.chunk.css.map": "/kkroszka-form/static/css/main.2fa33333.chunk.css.map",
     "static/js/2.07cbbb3e.chunk.js.LICENSE.txt": "/kkroszka-form/static/js/2.07cbbb3e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e71ad11f.js",
     "static/js/2.07cbbb3e.chunk.js",
-    "static/css/main.18b979e0.chunk.css",
-    "static/js/main.d825744c.chunk.js"
+    "static/css/main.2fa33333.chunk.css",
+    "static/js/main.f84b1710.chunk.js"
   ]
 }
