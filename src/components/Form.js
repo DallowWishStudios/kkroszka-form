@@ -8,7 +8,8 @@ const videoSources = {
     CAMERA: 'camera',
     FILE: 'file'
 }
-// const mbSize = 1048576
+// const backendUrl = 'http://localhost:3003/forms'
+const backendUrl = 'https://kkroszka-form.herokuapp.com/forms'
 
 export const Form = () => {
     const [formData, setFormData] = useState({
@@ -45,7 +46,7 @@ export const Form = () => {
 
     const sendFormData = (formDataToSend) => {
 
-        fetch('http://localhost:3003/forms', {
+        fetch(backendUrl, {
             method: 'post',
             body: formDataToSend
         }).then(async res => {
@@ -130,6 +131,7 @@ export const Form = () => {
     return (
         <div className='formContainer'>
             <form onSubmit={ handleSubmit }>
+                <div className={`overlay ${ isSubmitted ? 'active' : '' }`}></div>
                 <Input name='firstName' label='first name' onInputChange={onInputChange} />
                 <Input name='lastName' label='last name' onInputChange={onInputChange}/>
                 <Input name='age' label='age' type='number' onInputChange={onInputChange} />
